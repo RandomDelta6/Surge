@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Surge_Library")(type "KiCad")(uri "${KIPRJMOD}/Surge_Library.pretty")(options "")(descr ""))
+)
