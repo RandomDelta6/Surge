@@ -1,12 +1,11 @@
 # Introduction
 
-This is a ATX12VO Standard compatible +5VSB to +12VSB Converter Circuit. It is based around the FP6296 chip which is a current mode boost DC-DC converter. This board enables older power supplies which output 12V, 5V, 3V Rails to be compatible with the new ATX12VO Standard. This board features a universal design and is compatible with Power Supplies from any lineup of any manufacturer. Please refer to your PSU output pinout and ATX12VO Connector pinout to route the connecting wires for the connector cable properly. This board only converts the +5VSB rail to +12VSB rail as needed in ATX12VO standard.
 
-<img src= "https://user-images.githubusercontent.com/53912269/232194250-7f955c80-2642-498a-ae24-f675714303cc.png"  width="200"> 
+This is a Surge Protector PCB. It features robust large traces for high current carrying capacity and ensuring safety by preventing heating along unexpected regions. This board features an extremely small form factor of 61.6mm x 36.3mm so that it can be easily incorporated in any housing. It also features 3 M2 mounting points for securing the board to the housing.
 
-This board is expected to go inline in the PSU to ATX12VO motherboard connector cable and be sleeved, which would make it look similar to the above cable.
-
-This board features an extremely small form factor of 16.8mm x 17.3mm so that it can be easily incorporated inline in a sleeved ATX12VO Motherboard Connector cable. The compact size of the board and dense arrangement of components make it highly resilient to bending or breakage while attempting to cable manage or route ATX12VO Motherboard Connector cable in a tight PC case. The small form factor also ensures the flexibility of the cable is not compromised when installed inline. The larger the inline circuit board, the lesser the flexibility. Reduced flexibility of cable can result in difficulty in cable management or unsatisfactory results in cable management.
+Features Include 
+> Thermal Resettable Fuse
+>
 
 
 # Schematic
