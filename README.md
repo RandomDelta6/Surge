@@ -1,11 +1,19 @@
 # Introduction
 
 
-This is a Surge Protector PCB. It features robust large traces for high current carrying capacity and ensuring safety by preventing heating along unexpected regions. This board features an extremely small form factor of 61.6mm x 36.3mm so that it can be easily incorporated in any housing. It also features 3 M2 mounting points for securing the board to the housing.
+This is a Surge Protector PCB. It features robust large traces for high current carrying capacity and ensuring safety by preventing heating along unexpected regions. This board features an extremely small form factor of 61.6mm x 36.3mm so that it can be easily incorporated in any housing. It also features 3 M2 mounting points for securing the board to the housing. It is designed as a single sided pcb to reduce costs. 
+
+Continuous Duty Electrical Rating: 250V/13A/50Hz/3250W   
+Maximum Energy Dissipation: 476J    
+Maximum Spike Current: 13,000 A   
+Response Time: Less than 1 nanosecond
+
 
 Features Include 
 > Thermal Resettable Fuse
->
+> Low Cost
+> Small Footprint
+> 
 
 
 # Schematic
@@ -32,18 +40,12 @@ It is to be noted that +5VSB commences at the PSU Connector end and terminates a
 
 # Notes
 
-This board prioritises small form factor above all else and as such will have a performance penalty as opposed to the reference layout which uses a two layer design with single sided component layout spread out over a much larger area with global ground net on bottom layer. 
+All items are mounted on the back of the board, 
 
-Mounting the magnetic component (Inductor) directly on the otherside of the controller introduces significant noise and coupling. As such a 4 layer PCB is required for isolation which is achieved by flooding ground in the middle two copper layers as well as underneath the inductor on the bottom layer. This should provide significant shielding to signal lines and the throughly stitched ground planes should ensure low impedance across ground net. This minimises the magnetic effect but does not completely isolate it, as such a nominal coil whine is to be expected. This design uses all smd components to reduce noise bleed and isolate switching noise to ensure minimal noise characteristics on output line.
-
-The reference design might be cheaper as it utilises 2 layers as opposed to 4 layers in this design, but the cost difference should be negligible on a per unit basis when panelized due to the smaller board footprint in this design which would net more boards from a similar sized panel. Thorough use of vias in this design is necessary for proper signal integrity even though it might increase expense. Thick signal traces are used wherever necessary to minimise the inductive effect of the tracks for high frequency signals. Ceramic Capacitors with low ESR must be used. MLCC X5R and X7R Series are recommended.
-
-Although I am pretty confident the board should work, you might still wish to have the board verified by a professional. I am not particularly confident about the values of C4 and C10.
-
-Couldn't find a proper model for Inductor L1 and Diodes D1 and D2, so they are missing on the PCB views.
+Although I am pretty confident the board should work, you might still wish to have the board verified by a professional.Couldn't find a proper model for Thermal Circuit Breaker, so it is missing in PCB view.
 
 This project was made with Kicad 7.0 .
-Generate gerbers as per specification from the fab of your choice.
+Generate gerbers as per specifications of the fab of your choice.
 
 
 # Disclaimer
