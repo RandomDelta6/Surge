@@ -40,7 +40,14 @@ It is to be noted that +5VSB commences at the PSU Connector end and terminates a
 
 # Notes
 
-All items are mounted on the back of the board, 
+All items are mounted on the back of the board
+
+A 23AWG wire (0 ohm link) should be run across the back of the board from Epass1 to Epass2. 
+Solder mask is not used on either side of the board. It is not used on the front to allow for deposited solder to increase current carrying capacity. It is not used on the back since it is not required. All copper traces are on the front side of the board only as a cost saving measure. NPTH maybe used to reduce cost further. 
+
+
+
+Mounting: Plastic Prongs or Screw posts
 
 Although I am pretty confident the board should work, you might still wish to have the board verified by a professional.Couldn't find a proper model for Thermal Circuit Breaker, so it is missing in PCB view.
 

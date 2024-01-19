@@ -13,5 +13,5 @@
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp f27d314c-f1e6-4fcf-9faf-e67d887512a9)
   )
-  (pad "1" thru_hole roundrect (at 0 -4.7) (size 5 5) (drill 2.8) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.25) (tstamp 72c4ff56-3714-472c-a011-41001f7a6d3f))
+  (pad "1" thru_hole roundrect (at 0 -4.7) (size 4 4) (drill 2) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.25) (tstamp 72c4ff56-3714-472c-a011-41001f7a6d3f))
 )
