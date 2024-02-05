@@ -1,6 +1,10 @@
 # Introduction
 
 
+Alert: Incomplete Readme
+
+
+
 This is a Surge Protector PCB. It features robust large traces for high current carrying capacity and ensuring safety by preventing heating along unexpected regions. This board features an extremely small form factor of 61.6mm x 36.3mm so that it can be easily incorporated in any housing. It also features 3 M2 mounting points for securing the board to the housing. It is designed as a single sided pcb to reduce costs. 
 
 Continuous Duty Electrical Rating: 250V/13A/50Hz/3250W   
@@ -18,16 +22,16 @@ Features Include
 
 # Schematic
 
-<img src= "https://user-images.githubusercontent.com/53912269/232120125-1deb1704-0188-4783-b5d2-be8cb820dbed.png"  width="750"> 
+<img src= "https://github.com/RandomDelta6/USB-Mouse/assets/53912269/448d8964-b8b8-4f8a-9179-4dc1928ab4a5"  width="750"> 
 
 
 # PCB
 
-<img src="https://user-images.githubusercontent.com/53912269/232188920-34c76fb8-cfb7-4699-81d4-b1005601bacc.png" width ="250">        
+<img src="https://github.com/RandomDelta6/USB-Mouse/assets/53912269/42b22267-ad44-4c84-bf96-2bf08c58f96c" width ="500">        
 
 PCB Front View
 
-<img src="https://user-images.githubusercontent.com/53912269/232189052-a326f1e7-1ed4-454e-8c3d-7d5ca8a89cb7.png" width ="250">
+<img src="https://github.com/RandomDelta6/USB-Mouse/assets/53912269/ecdb3ff5-6b36-43cb-a74d-336807115d50" width ="500">
 
 PCB Back View
 
@@ -49,7 +53,7 @@ Solder mask is not used on either side of the board. It is not used on the front
 
 Mounting: Plastic Prongs or Screw posts
 
-Although I am pretty confident the board should work, you might still wish to have the board verified by a professional.Couldn't find a proper model for Thermal Circuit Breaker, so it is missing in PCB view.
+Although I am pretty confident the board should work, you might still wish to have the board verified by a professional. Couldn't find a proper model for Thermal Circuit Breaker, so it is missing in PCB view.
 
 This project was made with Kicad 7.0 .
 Generate gerbers as per specifications of the fab of your choice.
