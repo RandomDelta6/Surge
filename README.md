@@ -35,13 +35,18 @@ PCB Front View
 
 Proceed to place all components on the back of the board. Use 10AWG Wires for Input Cabling. Use 0.75 - 1.00 cm brass / copper strips as bus bars for the outlets. rails used for Live and Neutral supply in the Surge Protected Power Strip are expected to be soldered directly to the PCB. The brass strip should be slid in from the back side into the appropriate slit marked for it, folded down on the front side and then soldered onto the large flat pad for it. A short 10AWG wire should be soldered onto the Ground rail to the Ground Output on the PCB. Recommended for 6/8 Outlet Surge Protector Strips. Recommend Body to be made out of Thick ABS. 
 
+The discrete Neon lamp indicates protection status, incase it is not glowing even when neon lamp in TCB is glowing, it indicates the safety circuit is blown and product needs to be replaced, as the lamp is parallel to ouput, when the lamp is not glowing, the devices connected to the strip will no longer be connected to power as well, this is in contrast to general power strips which may continue to supply power to connected devices even after safety circuit is compromised, relying on the user to notice the protection indicator is no longer lit, leaving devices vulnerable.
+
+Dip soldering is recommended for the pcb assembly. All components should be inserted in from the back side , have excess leads trimmed and rail bars folded and then have the front side be dipped in solder bath to ensure uniform and sufficient solder coverage for efficient electrical connection.
+
+Plastic Prongs or Screw Posts maybe provided on the frame for mounting the PCB. 3 M2 holes are provided on PCB for attaching via screws or plastic push pins. Flat Plastic Protrusions maybe used as guides for PCB placement as well as enhanced isolation, they are expected to slide into the long rectangular cutouts between L out and N out traces and N and E traces. 
+
+
 # Notes
 
 All items are mounted on the back of the board. A 23AWG wire (0 ohm link) should be run across the back of the board from Epass1 to Epass2. Solder mask is not used on either side of the board. It is not used on the front to allow for deposited solder to increase current carrying capacity. It is not used on the back since it is not required. All copper traces are on the front side of the board only as a cost saving measure. NPTH maybe used to reduce cost further. 
 
-The Fuse and MOV Array maybe encapsulated in a piece of heatshrink tube of sufficient size.  The Brass rails used for Live and Neutral supply in the Surge Protected Power Strip are expected to be soldered directly to the PCB. The brass strip should be slid in from the back side into the appropriate slit marked for it, folded down on the front side and then soldered onto the large flat pad for it. Dip soldering is recommended for the pcb assembly.
-
-Plastic Prongs or Screw Posts maybe provided on the frame for mounting the PCB. 3 M2 holes are provided on PCB for attaching via screws or plastic push pins.  Flat Plastic Protrusions maybe used as guides for PCB placement as well as enhanced isolation, they are expected to slide into the long rectangular cutouts between L out and N out traces and N and E traces.
+The Fuse and MOV Array maybe encapsulated in a piece of heatshrink tube of sufficient size.  The Brass rails used for Live and Neutral supply in the Surge Protected Power Strip are expected to be soldered directly to the PCB. The brass strip should be slid in from the back side into the appropriate slit marked for it, folded down on the front side and then soldered onto the large flat pad for it. 
 
 Couldn't find a proper model for Thermal Circuit Breaker, so it is missing in PCB view.
 
