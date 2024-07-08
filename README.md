@@ -52,7 +52,7 @@ The Fuse and MOV Array maybe encapsulated in a piece of heatshrink tube of suffi
 
 Couldn't find a proper model for Thermal Circuit Breaker, so it is missing in PCB view.
 
-This project was made with Kicad 7.0 . Updated on Kicad 8.0.3
+This project was made with Kicad 7.0 . Updated on Kicad 8.0.3   
 Generate gerbers as per specifications of the fab of your choice.
 
 
