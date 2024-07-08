@@ -670,7 +670,7 @@
     (property "Reference" "R1" (at 73.66 39.37 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "200K Ω" (at 73.66 41.91 0)
+    (property "Value" "100K Ω" (at 73.66 41.91 0)
       (effects (font (size 1 1)))
     )
     (property "Footprint" "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" (at 76.962 40.64 90)
@@ -734,10 +734,10 @@
   (symbol (lib_id "Device:Lamp_Neon") (at 78.74 49.53 180) (unit 1)
     (in_bom yes) (on_board no) (dnp no)
     (uuid 41262317-f373-4349-ac59-0e4aab17e17c)
-    (property "Reference" "NE1" (at 69.85 48.26 0)
+    (property "Reference" "N1" (at 69.85 48.26 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Lamp_Neon" (at 69.85 50.4769 0)
+    (property "Value" "NE2 Bulb" (at 69.85 50.4769 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Surge_Library:NE2" (at 78.74 52.07 90)
@@ -751,7 +751,7 @@
     (instances
       (project "Surge"
         (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "NE1") (unit 1)
+          (reference "N1") (unit 1)
         )
       )
     )
@@ -835,7 +835,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 86.36 54.61 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6a172183-41ba-4241-9800-cbe038d6c162)
-    (property "Reference" "NE3" (at 88.9 50.038 0)
+    (property "Reference" "NE2" (at 88.9 50.038 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "NE_L" (at 88.9 52.578 0)
@@ -851,7 +851,7 @@
     (instances
       (project "Surge"
         (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "NE3") (unit 1)
+          (reference "NE2") (unit 1)
         )
       )
     )
@@ -1095,7 +1095,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 86.36 36.83 180) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f05afaf4-cf6a-455d-b3b1-1dc0c9e86390)
-    (property "Reference" "NE2" (at 88.9 38.862 0)
+    (property "Reference" "NE1" (at 88.9 38.862 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "NE_N" (at 88.9 41.402 0)
@@ -1111,7 +1111,7 @@
     (instances
       (project "Surge"
         (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "NE2") (unit 1)
+          (reference "NE1") (unit 1)
         )
       )
     )
