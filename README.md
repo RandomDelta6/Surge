@@ -1,6 +1,6 @@
 # Introduction
 
-This is a basic Surge Protector PCB. It features robust large traces for high current carrying capacity and ensuring safety by preventing heating along unexpected regions. This board features an extremely small form factor of 61.6mm x 36.3mm so that it can be easily incorporated in any housing. It also features 3 M2 mounting points for securing the board to the housing. It is designed as a single sided pcb to reduce costs. 
+This is a basic Passive Surge Protector PCB. It features robust large traces for high current carrying capacity and ensuring safety by preventing heating along unexpected regions. This board features an extremely small form factor of 61.6mm x 36.3mm so that it can be easily incorporated in any housing. It also features 3 M2 mounting points for securing the board to the housing. It is designed as a single sided pcb to reduce costs. 
 
 Continuous Duty Electrical Rating: 250V/13A/50Hz/3250W   
 Maximum Energy Dissipation: 396J    
@@ -8,10 +8,10 @@ Maximum Spike Current: 12,000 A
 Response Time: Less than 1 nanosecond
 Maximum spike voltage: 6kV
 
-Features Include:   
-Thermal Resettable Fuse  
-Low Cost  
-Small Footprint  
+Features Include :      
+Thermal Resettable Fuse    
+Low Cost   
+Small Footprint   
  
 
 
@@ -31,11 +31,9 @@ PCB Back View
 PCB Front View
 
 
-# Usage
+# Product Design Considerations
 
-Proceed to place all components on the back of the board. Use 10AWG Wires for Input Cabling. 
-
-It is to be noted that +5VSB commences at the PSU Connector end and terminates at this board while +12VSB originates at this board and continues to the ATX12VO Motherboard Connector. +12V and GND wires are to run across the cable from the PSU connector end to the motherboard connector end and the +12V and GND connections for this board may use wires spliced in with the +12V and GND wires running across the cable or have dedicated wires run through the PSU connector end to the +12V and GND terminals of this board. The inline circuit assembly maybe encapsulated with a heatshrink for better isolation. It can then be bundled together with the other wires running across the cable and be sleeved together. 
+Proceed to place all components on the back of the board. Use 10AWG Wires for Input Cabling. Use 0.75 - 1.00 cm brass / copper strips as bus bars for the outlets. rails used for Live and Neutral supply in the Surge Protected Power Strip are expected to be soldered directly to the PCB. The brass strip should be slid in from the back side into the appropriate slit marked for it, folded down on the front side and then soldered onto the large flat pad for it. A short 10AWG wire should be soldered onto the Ground rail to the Ground Output on the PCB. Recommended for 6/8 Outlet Surge Protector Strips. Recommend Body to be made out of Thick ABS. 
 
 # Notes
 
