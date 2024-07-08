@@ -1,8 +1,8 @@
 # Introduction
 
-This is a basic Passive Surge Protector PCB. It features robust large traces for high current carrying capacity and ensuring safety by preventing heating along unexpected regions. This board features an extremely small form factor of 61.6mm x 36.3mm so that it can be easily incorporated in any housing. It also features 3 M2 mounting points for securing the board to the housing. It is designed as a single sided pcb to reduce costs. 
+This is a basic Passive Surge Protector PCB. It features robust large traces for high current carrying capacity and ensuring safety by preventing heating along unexpected regions. This board features an extremely small form factor of 61.6mm x 36.3mm so that it can be easily incorporated in any housing. It also features 3 M2 mounting points for securing the board to the housing. It is designed as a single sided pcb to reduce costs. Provides protection against Voltage Spikes, Short Circuit and Over Current.
 
-Continuous Duty Electrical Rating: 250V/13A/50Hz/3250W   
+Continuous Duty Electrical Rating: 250V/15A/50Hz/3750W   
 Maximum Energy Dissipation: 396J    
 Maximum Spike Current: 12,000 A   
 Response Time: Less than 1 nanosecond
@@ -37,6 +37,8 @@ Proceed to place all components on the back of the board. Use 10AWG Wires for In
 
 The discrete Neon lamp indicates protection status, incase it is not glowing even when neon lamp in TCB is glowing, it indicates the safety circuit is blown and product needs to be replaced, as the lamp is parallel to ouput, when the lamp is not glowing, the devices connected to the strip will no longer be connected to power as well, this is in contrast to general power strips which may continue to supply power to connected devices even after safety circuit is compromised, relying on the user to notice the protection indicator is no longer lit, leaving devices vulnerable.
 
+Thermal Fuses have a slightly higher rating of 20A as opposed to 15A of TCB, TCB has a faster action time and hence will be "resettable" after a brief period of rest when triggered. The thermal fuses act as additional protection incase of failure of TCB to cutoff power even when Current threshold is crossed. Additionally they are sandwiched between the MOVs so that the heat dissipated by MOVs incase of continuous or large Voltage Spike can cause the fuses to reach their activation temperature and blow to cut power to devices.
+
 Dip soldering is recommended for the pcb assembly. All components should be inserted in from the back side , have excess leads trimmed and rail bars folded and then have the front side be dipped in solder bath to ensure uniform and sufficient solder coverage for efficient electrical connection.
 
 Plastic Prongs or Screw Posts maybe provided on the frame for mounting the PCB. 3 M2 holes are provided on PCB for attaching via screws or plastic push pins. Flat Plastic Protrusions maybe used as guides for PCB placement as well as enhanced isolation, they are expected to slide into the long rectangular cutouts between L out and N out traces and N and E traces. 
@@ -50,7 +52,7 @@ The Fuse and MOV Array maybe encapsulated in a piece of heatshrink tube of suffi
 
 Couldn't find a proper model for Thermal Circuit Breaker, so it is missing in PCB view.
 
-This project was made with Kicad 7.0 .
+This project was made with Kicad 7.0 . Updated on Kicad 8.0.3
 Generate gerbers as per specifications of the fab of your choice.
 
 

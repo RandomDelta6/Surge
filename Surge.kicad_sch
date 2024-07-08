@@ -1,1123 +1,2951 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 87282895-5363-4673-9c65-8e036a00088a)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "TP" (at 0 6.858 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "TestPoint" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 5.08 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 5.08 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "test point tp" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "test point" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Pin* Test*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "TestPoint_0_1"
-        (circle (center 0 3.302) (radius 0.762)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "TestPoint_1_1"
-        (pin passive line (at 0 0 90) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:Fuse" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "F" (at 2.032 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Fuse" (at -1.905 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "fuse" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Fuse" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "*Fuse*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Fuse_0_1"
-        (rectangle (start -0.762 -2.54) (end 0.762 2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "Fuse_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:Lamp_Neon" (pin_names (offset 0.0254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "NE" (at 0.635 3.81 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "Lamp_Neon" (at 0.635 -3.81 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0 2.54 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 2.54 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "neon lamp" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Neon lamp" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Lamp_Neon_0_1"
-        (rectangle (start -1.524 -0.508) (end 1.524 -0.762)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start -1.524 0.762) (end 1.524 0.508)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy 0 -2.54)
-            (xy 0 -0.762)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0.762)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 0) (radius 2.54)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 1.016 -1.27) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "Lamp_Neon_1_1"
-        (pin passive line (at 0 -5.08 90) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 5.08 270) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 2.032 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "R" (at 0 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R res resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_0_1"
-        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:Varistor" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "RV" (at 3.175 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Varistor" (at -3.175 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Name" "kicad_builtin_varistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Device" "SUBCKT" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Pins" "1=A 2=B" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Params" "threshold=1k" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "VDR resistance" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Voltage dependent resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "RV_* Varistor*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Varistor_0_0"
-        (text "U" (at -1.778 -2.032 0)
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (symbol "Varistor_0_1"
-        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.905 2.54)
-            (xy -1.905 1.27)
-            (xy 1.905 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "Varistor_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Mechanical:MountingHole_Pad" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 0 6.35 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MountingHole_Pad" (at 0 4.445 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "mounting hole" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mounting Hole with connection" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "MountingHole*Pad*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MountingHole_Pad_0_1"
-        (circle (center 0 1.27) (radius 1.27)
-          (stroke (width 1.27) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "MountingHole_Pad_1_1"
-        (pin input line (at 0 -2.54 90) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Surge:TCB" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at 0 -12.7 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "TCB_0_0"
-        (circle (center -1.99 -2.54) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "TCB_0_1"
-        (polyline
-          (pts
-            (xy -1.482 -2.286)
-            (xy 1.6168 -0.254)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.074 0) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "TCB_1_1"
-        (rectangle (start -2.54 5.08) (end 2.54 -5.08)
-          (stroke (width 0) (type dash))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 2.54 0) (length 2.54)
-          (name "N" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.2 0 180) (length 2.54)
-          (name "Load" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 2.54)
-          (name "Line" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:Earth" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "Earth" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global ground gnd" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"Earth\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Earth_0_1"
-        (polyline
-          (pts
-            (xy -0.635 -1.905)
-            (xy 0.635 -1.905)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.127 -2.54)
-            (xy 0.127 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -1.27)
-            (xy 0 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -1.27)
-            (xy -1.27 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "Earth_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "Earth" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 100.33 60.96) (diameter 0) (color 0 0 0 0)
-    (uuid 33e8fada-8462-4b44-938c-a0c7bad45dec)
-  )
-  (junction (at 100.33 83.82) (diameter 0) (color 0 0 0 0)
-    (uuid 427ed3f1-8642-4165-88e7-bfc1d4ca8355)
-  )
-  (junction (at 86.36 30.48) (diameter 0) (color 0 0 0 0)
-    (uuid 58ce5834-ff41-4a54-965e-9618753117e9)
-  )
-  (junction (at 86.36 60.96) (diameter 0) (color 0 0 0 0)
-    (uuid 5e8674e8-616c-441b-96be-6d841ecc20c0)
-  )
-  (junction (at 100.33 30.48) (diameter 0) (color 0 0 0 0)
-    (uuid 77a12715-b5e6-431e-b11c-891433fc5264)
-  )
-  (junction (at 56 46.99) (diameter 0) (color 0 0 0 0)
-    (uuid 7d4e0593-f043-4726-8387-b8eb42b6b2a4)
-  )
-  (junction (at 125.73 45.72) (diameter 0) (color 0 0 0 0)
-    (uuid 9743f461-5847-482d-9f24-58cb7a193110)
-  )
-  (junction (at 41.91 30.48) (diameter 0) (color 0 0 0 0)
-    (uuid be28bef1-5761-4104-bf1d-37a8242ca6b4)
-  )
-
-  (no_connect (at 78.74 54.61) (uuid 3453207b-cc96-43c1-9414-e3ef98966f8f))
-  (no_connect (at 78.74 36.83) (uuid e17da8d5-6558-468e-ace3-9d6b621bfebf))
-
-  (wire (pts (xy 121.92 45.72) (xy 125.73 45.72))
-    (stroke (width 0) (type default))
-    (uuid 0125f3fe-39ab-4042-a356-992e4c186d1d)
-  )
-  (wire (pts (xy 100.33 60.96) (xy 109.22 60.96))
-    (stroke (width 0) (type default))
-    (uuid 0258d1f4-cb35-4b56-9ed6-095a963a6cdf)
-  )
-  (wire (pts (xy 41.91 44.45) (xy 45.72 44.45))
-    (stroke (width 0) (type default))
-    (uuid 0604e556-c43a-411e-bce7-a7c1fa6fd44b)
-  )
-  (wire (pts (xy 86.36 54.61) (xy 86.36 60.96))
-    (stroke (width 0) (type default))
-    (uuid 106b10ba-571b-4d31-a891-b7f3b88c63d5)
-  )
-  (wire (pts (xy 58.42 60.96) (xy 64.77 60.96))
-    (stroke (width 0) (type default))
-    (uuid 1359b1c2-56a4-453b-a8f9-1622c5b80861)
-  )
-  (wire (pts (xy 35.56 30.48) (xy 41.91 30.48))
-    (stroke (width 0) (type default))
-    (uuid 13aec19a-611d-4896-aa0f-d6c10921d307)
-  )
-  (polyline (pts (xy 78.74 34.29) (xy 86.36 34.29))
-    (stroke (width 0) (type dot))
-    (uuid 194e69a3-beaf-4877-8e8c-852a8c0ce8fa)
-  )
-
-  (wire (pts (xy 58.42 46.99) (xy 58.42 60.96))
-    (stroke (width 0) (type default))
-    (uuid 1ad8843f-ce3d-4afd-99a4-76f5c623e26a)
-  )
-  (wire (pts (xy 100.33 60.96) (xy 100.33 62.23))
-    (stroke (width 0) (type default))
-    (uuid 1e24f89f-a8ce-4ee1-9163-3814a1ba4cdd)
-  )
-  (wire (pts (xy 35.56 83.82) (xy 100.33 83.82))
-    (stroke (width 0) (type default))
-    (uuid 1fae3bfa-6177-44ed-bb49-06afda06f787)
-  )
-  (wire (pts (xy 86.36 60.96) (xy 100.33 60.96))
-    (stroke (width 0) (type default))
-    (uuid 22479426-b867-4216-b984-68b028f2bae3)
-  )
-  (wire (pts (xy 41.91 30.48) (xy 64.77 30.48))
-    (stroke (width 0) (type default))
-    (uuid 349b0a13-a05c-4b00-b0eb-0320e3f16e4f)
-  )
-  (wire (pts (xy 100.33 69.85) (xy 100.33 71.12))
-    (stroke (width 0) (type default))
-    (uuid 38fdc4ce-18ed-40be-b1b4-f8c208018b34)
-  )
-  (polyline (pts (xy 78.74 57.15) (xy 86.36 57.15))
-    (stroke (width 0) (type dot))
-    (uuid 3c38fc6d-b56a-46ee-9890-79ec77d81c3c)
-  )
-
-  (wire (pts (xy 41.91 30.48) (xy 41.91 44.45))
-    (stroke (width 0) (type default))
-    (uuid 3cea5666-7621-4a76-8db9-cecbefc753bb)
-  )
-  (wire (pts (xy 100.33 21.59) (xy 100.33 20.32))
-    (stroke (width 0) (type default))
-    (uuid 4925b7d0-59fe-40e6-9cc2-78f0e1d55d8b)
-  )
-  (wire (pts (xy 41.91 49.53) (xy 45.72 49.53))
-    (stroke (width 0) (type default))
-    (uuid 55ea2017-55bd-4bf9-9df9-ac5fe15fe499)
-  )
-  (wire (pts (xy 100.33 81.28) (xy 100.33 83.82))
-    (stroke (width 0) (type default))
-    (uuid 58ba27f4-9513-447c-ab66-325694ae32fa)
-  )
-  (wire (pts (xy 125.73 45.72) (xy 125.73 83.82))
-    (stroke (width 0) (type default))
-    (uuid 5923080e-fc56-467e-9ef0-2640e66b7400)
-  )
-  (wire (pts (xy 100.33 49.53) (xy 100.33 60.96))
-    (stroke (width 0) (type default))
-    (uuid 7e79b4bc-306f-441a-87ef-a36d0ed36fbf)
-  )
-  (wire (pts (xy 100.33 30.48) (xy 100.33 41.91))
-    (stroke (width 0) (type default))
-    (uuid 7fe366d1-94eb-49eb-b546-b8521624aab7)
-  )
-  (wire (pts (xy 125.73 83.82) (xy 100.33 83.82))
-    (stroke (width 0) (type default))
-    (uuid 8e16090f-1633-4ba4-a584-60248860cb70)
-  )
-  (wire (pts (xy 100.33 30.48) (xy 100.33 29.21))
-    (stroke (width 0) (type default))
-    (uuid 917aa671-6043-41c3-9fb1-c673cf2cbec1)
-  )
-  (wire (pts (xy 56 46.99) (xy 58.42 46.99))
-    (stroke (width 0) (type default))
-    (uuid 9bf9bb66-860f-4fc2-a173-2d6906d6ff2f)
-  )
-  (polyline (pts (xy 78.74 54.61) (xy 78.74 57.15))
-    (stroke (width 0) (type dot))
-    (uuid 9e664c3b-8f70-4a41-81a3-c6f74a574d43)
-  )
-  (polyline (pts (xy 78.74 36.83) (xy 78.74 34.29))
-    (stroke (width 0) (type dot))
-    (uuid a620cb36-b404-43bb-b5d6-8979fb5c0de0)
-  )
-
-  (wire (pts (xy 100.33 30.48) (xy 109.22 30.48))
-    (stroke (width 0) (type default))
-    (uuid b8562d03-e851-4613-a499-59935c570298)
-  )
-  (wire (pts (xy 125.73 20.32) (xy 125.73 45.72))
-    (stroke (width 0) (type default))
-    (uuid c06a1de9-57b8-4fd9-9b2a-e07d8cdac350)
-  )
-  (wire (pts (xy 72.39 30.48) (xy 86.36 30.48))
-    (stroke (width 0) (type default))
-    (uuid c13f66c6-9e95-40ab-bb86-ee4e71ad6ddc)
-  )
-  (wire (pts (xy 86.36 36.83) (xy 86.36 30.48))
-    (stroke (width 0) (type default))
-    (uuid c8908974-118b-40e1-b8f0-d8dfc86be229)
-  )
-  (wire (pts (xy 41.91 60.96) (xy 41.91 49.53))
-    (stroke (width 0) (type default))
-    (uuid c971dd0f-4a82-4f0e-8280-70da22d5dd35)
-  )
-  (wire (pts (xy 55.88 46.99) (xy 56 46.99))
-    (stroke (width 0) (type default))
-    (uuid d8d6b1d1-fb1b-4957-988d-ebdd675358e2)
-  )
-  (wire (pts (xy 86.36 30.48) (xy 100.33 30.48))
-    (stroke (width 0) (type default))
-    (uuid df1cec02-dca2-470d-b650-28166be65990)
-  )
-  (wire (pts (xy 72.39 60.96) (xy 86.36 60.96))
-    (stroke (width 0) (type default))
-    (uuid ea966208-ab29-43b1-b63a-2dc70889074b)
-  )
-  (wire (pts (xy 35.56 60.96) (xy 41.91 60.96))
-    (stroke (width 0) (type default))
-    (uuid f067b20f-05b0-4ce8-b861-490bf12c8338)
-  )
-  (polyline (pts (xy 100.33 78.74) (xy 100.33 73.66))
-    (stroke (width 0) (type dot))
-    (uuid fbd872e9-7e8b-4741-a85b-97d8c4cbacc4)
-  )
-
-  (wire (pts (xy 100.33 20.32) (xy 125.73 20.32))
-    (stroke (width 0) (type default))
-    (uuid fe20c42f-8f28-4579-ba58-f783b51c4cd0)
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 33.02 60.96 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0c5e110d-3522-48ce-8c66-81d540e42c95)
-    (property "Reference" "H2" (at 31.75 54.61 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "L_in" (at 31.75 57.15 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Surge_Library:I_Hole" (at 33.02 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 33.02 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 994b8794-7c12-4c5e-a1c8-4edcc48a071c))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "H2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 111.76 60.96 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 26a9ee35-3069-46ef-be2e-1cf6f8413506)
-    (property "Reference" "H5" (at 115.57 59.69 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "L_out" (at 115.57 62.23 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Surge_Library:L_Hole" (at 111.76 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 111.76 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a17429c6-d815-46c0-b3c2-27b580ea9dbf))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "H5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:Fuse") (at 68.58 30.48 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 2777ddd7-651c-4799-996a-a6ac2b7acb2b)
-    (property "Reference" "F1" (at 68.58 25.4 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "TCO 115C 20A 250V" (at 68.58 27.94 90)
-      (effects (font (size 1 1)))
-    )
-    (property "Footprint" "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4" (at 68.58 28.702 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 68.58 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 68a22222-d409-4a48-abd6-2e6ea8ce404a))
-    (pin "2" (uuid 5c27d1cc-dc5a-4fc6-9e36-8770fc0e8a4f))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "F1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 78.74 40.64 0) (unit 1)
-    (in_bom yes) (on_board no) (dnp no)
-    (uuid 33f55772-bafe-4ab4-b3ba-0ca949781d55)
-    (property "Reference" "R1" (at 73.66 39.37 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100K Ω" (at 73.66 41.91 0)
-      (effects (font (size 1 1)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" (at 76.962 40.64 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 78.74 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 59621c38-7c2f-4a04-bc99-0442065e36a4))
-    (pin "2" (uuid bf350bef-0247-4907-a151-526ad6618c62))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "R1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:Varistor") (at 100.33 66.04 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 368d5337-36c1-4a38-9527-d88a52dc65d2)
-    (property "Reference" "RV3" (at 102.87 64.9633 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "471K" (at 102.87 67.5032 0)
-      (effects (font (size 1 1)) (justify left))
-    )
-    (property "Footprint" "Varistor:RV_Disc_D21.5mm_W4.7mm_P10mm" (at 98.552 66.04 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 100.33 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Name" "kicad_builtin_varistor" (at 100.33 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "SUBCKT" (at 100.33 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=A 2=B" (at 100.33 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Params" "threshold=1k" (at 100.33 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp" (at 100.33 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f21621bd-8e7e-4c7e-916e-a5f74f6253b0))
-    (pin "2" (uuid fbb233d5-8d55-42d0-a009-331d0a80ff84))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "RV3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:Lamp_Neon") (at 78.74 49.53 180) (unit 1)
-    (in_bom yes) (on_board no) (dnp no)
-    (uuid 41262317-f373-4349-ac59-0e4aab17e17c)
-    (property "Reference" "N1" (at 69.85 48.26 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "NE2 Bulb" (at 69.85 50.4769 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Surge_Library:NE2" (at 78.74 52.07 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 78.74 52.07 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a8a40f5e-e045-4c4f-83cb-42ad089645f3))
-    (pin "2" (uuid 0950f4bd-4a78-4d04-87c0-ca9ca54aab49))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "N1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 100.33 71.12 180) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
-    (uuid 59a9bf78-980a-478a-807e-2801a7040d8f)
-    (property "Reference" "J1" (at 99.06 73.66 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" " " (at 99.06 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Surge_Library:NEmount" (at 95.25 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 95.25 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 02fe41be-cf43-47bc-9694-8ac54e84936a))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 100.33 81.28 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
-    (uuid 5e473d1d-1be5-44ba-9d9b-6c12ba8c300b)
-    (property "Reference" "J2" (at 99.06 78.74 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" " " (at 99.06 81.28 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Surge_Library:NEmount" (at 105.41 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 105.41 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ff546b5d-ac60-4df8-9e66-93b77daa8c3b))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "J2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 119.38 45.72 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 640002ea-257b-4621-97a1-8d976239189a)
-    (property "Reference" "H6" (at 118.11 39.7977 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "E_out" (at 118.11 42.2219 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Surge_Library:I_Hole" (at 119.38 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 119.38 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 05a68892-bd52-456f-9c2c-00972e00314d))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "H6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 86.36 54.61 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6a172183-41ba-4241-9800-cbe038d6c162)
-    (property "Reference" "NE2" (at 88.9 50.038 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "NE_L" (at 88.9 52.578 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Surge_Library:NEmount" (at 91.44 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 91.44 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3b369e9b-4924-4afc-b7f6-bcf27de31888))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "NE2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 33.02 30.48 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 71e7f520-6e1c-42a2-bc73-e8e45c4dfae3)
-    (property "Reference" "H1" (at 31.75 24.13 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "N_in" (at 31.75 26.67 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Surge_Library:I_Hole" (at 33.02 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 33.02 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9d4a43b2-b84a-4994-901d-4349849293e4))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "H1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:Varistor") (at 100.33 45.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 807dd9f5-666a-48d4-88e8-e369d06aa1fa)
-    (property "Reference" "RV2" (at 102.87 44.6433 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "471K" (at 102.87 47.1832 0)
-      (effects (font (size 1 1)) (justify left))
-    )
-    (property "Footprint" "Varistor:RV_Disc_D21.5mm_W4.7mm_P10mm" (at 98.552 45.72 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 100.33 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Name" "kicad_builtin_varistor" (at 100.33 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "SUBCKT" (at 100.33 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=A 2=B" (at 100.33 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Params" "threshold=1k" (at 100.33 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp" (at 100.33 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1ba1ec95-1443-485e-aee5-e2b2686a14be))
-    (pin "2" (uuid 659aff0a-7ed2-40fe-9f0d-93f88671e0b8))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "RV2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Surge:TCB") (at 50.8 46.99 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8404b653-bfb4-40d5-b97c-77cece282a12)
-    (property "Reference" "SW1" (at 52.07 40.64 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "C1005B 10A TCB" (at 52.07 38.1 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Surge_Library:Switch" (at 50.8 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 50.8 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 48adf246-dce8-4b02-b131-aac18387cdfe))
-    (pin "2" (uuid d0564b1f-7fd8-40f3-ae2d-7f7e4d237d57))
-    (pin "3" (uuid 81a4a7fb-4b04-467e-aa04-b8382a557e37))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "SW1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:Earth") (at 100.33 83.82 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 936581f0-e23f-47bb-a6cd-69b3a6e0bc22)
-    (property "Reference" "#PWR01" (at 100.33 90.17 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "Earth" (at 100.33 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (at 100.33 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 100.33 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 85ed377e-e346-4425-8991-0e5fbe749242))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "#PWR01") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:Varistor") (at 100.33 25.4 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 985d3643-e0be-4895-a96f-c0d9d2e84056)
-    (property "Reference" "RV1" (at 104.14 23.9367 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "471K" (at 104.14 26.4766 0)
-      (effects (font (size 1 1)) (justify right))
-    )
-    (property "Footprint" "Varistor:RV_Disc_D21.5mm_W4.7mm_P10mm" (at 102.108 25.4 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 100.33 25.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Name" "kicad_builtin_varistor" (at 100.33 25.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "SUBCKT" (at 100.33 25.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=A 2=B" (at 100.33 25.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Params" "threshold=1k" (at 100.33 25.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp" (at 100.33 25.4 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 33a53c46-467e-4fb7-ad32-9530feda16fe))
-    (pin "2" (uuid 211d3543-f713-410b-87d9-fcdc4e46f500))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "RV1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 33.02 83.82 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c030b0b9-bb33-4aae-b271-1122e0a801dd)
-    (property "Reference" "H3" (at 31.75 77.8977 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "E_in" (at 31.75 80.3219 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Surge_Library:I_Hole" (at 33.02 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 33.02 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e945a44a-66d2-4334-97d9-3bac75dee1d0))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "H3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 111.76 30.48 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid e1c7ab58-1396-4f69-ae1e-bb825d12505c)
-    (property "Reference" "H4" (at 115.57 29.21 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "N_out" (at 115.57 31.75 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Surge_Library:L_Hole" (at 111.76 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 111.76 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b720bd52-1b42-4e3a-9c72-0d4407532628))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "H4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:Fuse") (at 68.58 60.96 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e72043d0-7e07-4be8-8a50-e10334e52141)
-    (property "Reference" "F2" (at 68.58 56.0537 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "TCO 115C 20A 250V" (at 68.58 58.4779 90)
-      (effects (font (size 1 1)))
-    )
-    (property "Footprint" "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4" (at 68.58 59.182 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 68.58 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0d9eaced-3cad-4f4e-ad46-aa268e6fb9fb))
-    (pin "2" (uuid 839edce0-043b-4365-9407-b7dc8fec86c6))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "F2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 86.36 36.83 180) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f05afaf4-cf6a-455d-b3b1-1dc0c9e86390)
-    (property "Reference" "NE1" (at 88.9 38.862 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "NE_N" (at 88.9 41.402 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Surge_Library:NEmount" (at 81.28 36.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 81.28 36.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f59bfcf2-ea8d-448f-94cf-0341eb3ff63e))
-    (instances
-      (project "Surge"
-        (path "/87282895-5363-4673-9c65-8e036a00088a"
-          (reference "NE1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "87282895-5363-4673-9c65-8e036a00088a")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Fuse"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Lamp_Neon"
+			(pin_names
+				(offset 0.0254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "NE"
+				(at 0.635 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Lamp_Neon"
+				(at 0.635 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 2.54 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 2.54 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Neon lamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "neon lamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Lamp_Neon_0_1"
+				(rectangle
+					(start -1.524 -0.508)
+					(end 1.524 -0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 0.762)
+					(end 1.524 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.016 -1.27)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Lamp_Neon_1_1"
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Varistor"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at 3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Varistor"
+				(at -3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Voltage dependent resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "kicad_builtin_varistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=A 2=B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Params" "threshold=1k"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "VDR resistance"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "RV_* Varistor*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Varistor_0_0"
+				(text "U"
+					(at -1.778 -2.032 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Varistor_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -1.905 1.27) (xy 1.905 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Varistor_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Surge:TCB"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TCB_0_0"
+				(circle
+					(center -1.99 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TCB_0_1"
+				(polyline
+					(pts
+						(xy -1.482 -2.286) (xy 1.6168 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.074 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TCB_1_1"
+				(rectangle
+					(start -2.54 5.08)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0)
+						(type dash)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.2 0 180)
+					(length 2.54)
+					(name "Load"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "Line"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:Earth"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "Earth"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"Earth\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global ground gnd"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Earth_0_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Earth_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "Earth"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 100.33 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33e8fada-8462-4b44-938c-a0c7bad45dec")
+	)
+	(junction
+		(at 100.33 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "427ed3f1-8642-4165-88e7-bfc1d4ca8355")
+	)
+	(junction
+		(at 86.36 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58ce5834-ff41-4a54-965e-9618753117e9")
+	)
+	(junction
+		(at 86.36 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e8674e8-616c-441b-96be-6d841ecc20c0")
+	)
+	(junction
+		(at 100.33 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77a12715-b5e6-431e-b11c-891433fc5264")
+	)
+	(junction
+		(at 56 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d4e0593-f043-4726-8387-b8eb42b6b2a4")
+	)
+	(junction
+		(at 125.73 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9743f461-5847-482d-9f24-58cb7a193110")
+	)
+	(junction
+		(at 41.91 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be28bef1-5761-4104-bf1d-37a8242ca6b4")
+	)
+	(no_connect
+		(at 78.74 54.61)
+		(uuid "3453207b-cc96-43c1-9414-e3ef98966f8f")
+	)
+	(no_connect
+		(at 78.74 36.83)
+		(uuid "e17da8d5-6558-468e-ace3-9d6b621bfebf")
+	)
+	(wire
+		(pts
+			(xy 121.92 45.72) (xy 125.73 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0125f3fe-39ab-4042-a356-992e4c186d1d")
+	)
+	(wire
+		(pts
+			(xy 100.33 60.96) (xy 109.22 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0258d1f4-cb35-4b56-9ed6-095a963a6cdf")
+	)
+	(wire
+		(pts
+			(xy 41.91 44.45) (xy 45.72 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0604e556-c43a-411e-bce7-a7c1fa6fd44b")
+	)
+	(wire
+		(pts
+			(xy 86.36 54.61) (xy 86.36 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "106b10ba-571b-4d31-a891-b7f3b88c63d5")
+	)
+	(wire
+		(pts
+			(xy 58.42 60.96) (xy 64.77 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1359b1c2-56a4-453b-a8f9-1622c5b80861")
+	)
+	(wire
+		(pts
+			(xy 35.56 30.48) (xy 41.91 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13aec19a-611d-4896-aa0f-d6c10921d307")
+	)
+	(polyline
+		(pts
+			(xy 78.74 34.29) (xy 86.36 34.29)
+		)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(uuid "194e69a3-beaf-4877-8e8c-852a8c0ce8fa")
+	)
+	(wire
+		(pts
+			(xy 58.42 46.99) (xy 58.42 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ad8843f-ce3d-4afd-99a4-76f5c623e26a")
+	)
+	(wire
+		(pts
+			(xy 100.33 60.96) (xy 100.33 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e24f89f-a8ce-4ee1-9163-3814a1ba4cdd")
+	)
+	(wire
+		(pts
+			(xy 35.56 83.82) (xy 100.33 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fae3bfa-6177-44ed-bb49-06afda06f787")
+	)
+	(wire
+		(pts
+			(xy 86.36 60.96) (xy 100.33 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22479426-b867-4216-b984-68b028f2bae3")
+	)
+	(wire
+		(pts
+			(xy 41.91 30.48) (xy 64.77 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "349b0a13-a05c-4b00-b0eb-0320e3f16e4f")
+	)
+	(wire
+		(pts
+			(xy 100.33 69.85) (xy 100.33 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38fdc4ce-18ed-40be-b1b4-f8c208018b34")
+	)
+	(polyline
+		(pts
+			(xy 78.74 57.15) (xy 86.36 57.15)
+		)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(uuid "3c38fc6d-b56a-46ee-9890-79ec77d81c3c")
+	)
+	(wire
+		(pts
+			(xy 41.91 30.48) (xy 41.91 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cea5666-7621-4a76-8db9-cecbefc753bb")
+	)
+	(wire
+		(pts
+			(xy 100.33 21.59) (xy 100.33 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4925b7d0-59fe-40e6-9cc2-78f0e1d55d8b")
+	)
+	(wire
+		(pts
+			(xy 41.91 49.53) (xy 45.72 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55ea2017-55bd-4bf9-9df9-ac5fe15fe499")
+	)
+	(wire
+		(pts
+			(xy 100.33 81.28) (xy 100.33 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58ba27f4-9513-447c-ab66-325694ae32fa")
+	)
+	(wire
+		(pts
+			(xy 125.73 45.72) (xy 125.73 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5923080e-fc56-467e-9ef0-2640e66b7400")
+	)
+	(wire
+		(pts
+			(xy 100.33 49.53) (xy 100.33 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e79b4bc-306f-441a-87ef-a36d0ed36fbf")
+	)
+	(wire
+		(pts
+			(xy 100.33 30.48) (xy 100.33 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fe366d1-94eb-49eb-b546-b8521624aab7")
+	)
+	(wire
+		(pts
+			(xy 125.73 83.82) (xy 100.33 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e16090f-1633-4ba4-a584-60248860cb70")
+	)
+	(wire
+		(pts
+			(xy 100.33 30.48) (xy 100.33 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "917aa671-6043-41c3-9fb1-c673cf2cbec1")
+	)
+	(wire
+		(pts
+			(xy 56 46.99) (xy 58.42 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bf9bb66-860f-4fc2-a173-2d6906d6ff2f")
+	)
+	(polyline
+		(pts
+			(xy 78.74 54.61) (xy 78.74 57.15)
+		)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(uuid "9e664c3b-8f70-4a41-81a3-c6f74a574d43")
+	)
+	(polyline
+		(pts
+			(xy 78.74 36.83) (xy 78.74 34.29)
+		)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(uuid "a620cb36-b404-43bb-b5d6-8979fb5c0de0")
+	)
+	(wire
+		(pts
+			(xy 100.33 30.48) (xy 109.22 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8562d03-e851-4613-a499-59935c570298")
+	)
+	(wire
+		(pts
+			(xy 125.73 20.32) (xy 125.73 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c06a1de9-57b8-4fd9-9b2a-e07d8cdac350")
+	)
+	(wire
+		(pts
+			(xy 72.39 30.48) (xy 86.36 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c13f66c6-9e95-40ab-bb86-ee4e71ad6ddc")
+	)
+	(wire
+		(pts
+			(xy 86.36 36.83) (xy 86.36 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8908974-118b-40e1-b8f0-d8dfc86be229")
+	)
+	(wire
+		(pts
+			(xy 41.91 60.96) (xy 41.91 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c971dd0f-4a82-4f0e-8280-70da22d5dd35")
+	)
+	(wire
+		(pts
+			(xy 55.88 46.99) (xy 56 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8d6b1d1-fb1b-4957-988d-ebdd675358e2")
+	)
+	(wire
+		(pts
+			(xy 86.36 30.48) (xy 100.33 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df1cec02-dca2-470d-b650-28166be65990")
+	)
+	(wire
+		(pts
+			(xy 72.39 60.96) (xy 86.36 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea966208-ab29-43b1-b63a-2dc70889074b")
+	)
+	(wire
+		(pts
+			(xy 35.56 60.96) (xy 41.91 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f067b20f-05b0-4ce8-b861-490bf12c8338")
+	)
+	(polyline
+		(pts
+			(xy 100.33 78.74) (xy 100.33 73.66)
+		)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(uuid "fbd872e9-7e8b-4741-a85b-97d8c4cbacc4")
+	)
+	(wire
+		(pts
+			(xy 100.33 20.32) (xy 125.73 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe20c42f-8f28-4579-ba58-f783b51c4cd0")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 33.02 60.96 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c5e110d-3522-48ce-8c66-81d540e42c95")
+		(property "Reference" "H2"
+			(at 31.75 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L_in"
+			(at 31.75 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Surge_Library:I_Hole"
+			(at 33.02 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "994b8794-7c12-4c5e-a1c8-4edcc48a071c")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 111.76 60.96 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26a9ee35-3069-46ef-be2e-1cf6f8413506")
+		(property "Reference" "H5"
+			(at 115.57 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "L_out"
+			(at 115.57 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Surge_Library:L_Hole"
+			(at 111.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a17429c6-d815-46c0-b3c2-27b580ea9dbf")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 68.58 30.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2777ddd7-651c-4799-996a-a6ac2b7acb2b")
+		(property "Reference" "F1"
+			(at 68.58 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TCO 115C 20A 250V"
+			(at 68.58 27.94 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4"
+			(at 68.58 28.702 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 68.58 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68a22222-d409-4a48-abd6-2e6ea8ce404a")
+		)
+		(pin "2"
+			(uuid "5c27d1cc-dc5a-4fc6-9e36-8770fc0e8a4f")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 78.74 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "33f55772-bafe-4ab4-b3ba-0ca949781d55")
+		(property "Reference" "R1"
+			(at 73.66 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100K Ω"
+			(at 73.66 41.91 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal"
+			(at 76.962 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59621c38-7c2f-4a04-bc99-0442065e36a4")
+		)
+		(pin "2"
+			(uuid "bf350bef-0247-4907-a151-526ad6618c62")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Varistor")
+		(at 100.33 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "368d5337-36c1-4a38-9527-d88a52dc65d2")
+		(property "Reference" "RV3"
+			(at 102.87 64.9633 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "471K"
+			(at 102.87 67.5032 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Varistor:RV_Disc_D21.5mm_W4.7mm_P10mm"
+			(at 98.552 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_varistor"
+			(at 100.33 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 100.33 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A 2=B"
+			(at 100.33 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "threshold=1k"
+			(at 100.33 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 100.33 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f21621bd-8e7e-4c7e-916e-a5f74f6253b0")
+		)
+		(pin "2"
+			(uuid "fbb233d5-8d55-42d0-a009-331d0a80ff84")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "RV3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Lamp_Neon")
+		(at 78.74 49.53 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(uuid "41262317-f373-4349-ac59-0e4aab17e17c")
+		(property "Reference" "N1"
+			(at 69.85 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NE2 Bulb"
+			(at 69.85 50.4769 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Surge_Library:NE2"
+			(at 78.74 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8a40f5e-e045-4c4f-83cb-42ad089645f3")
+		)
+		(pin "2"
+			(uuid "0950f4bd-4a78-4d04-87c0-ca9ca54aab49")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "N1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 100.33 71.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "59a9bf78-980a-478a-807e-2801a7040d8f")
+		(property "Reference" "J1"
+			(at 99.06 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" " "
+			(at 99.06 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Surge_Library:NEmount"
+			(at 95.25 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02fe41be-cf43-47bc-9694-8ac54e84936a")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 100.33 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e473d1d-1be5-44ba-9d9b-6c12ba8c300b")
+		(property "Reference" "J2"
+			(at 99.06 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" " "
+			(at 99.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Surge_Library:NEmount"
+			(at 105.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff546b5d-ac60-4df8-9e66-93b77daa8c3b")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 119.38 45.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "640002ea-257b-4621-97a1-8d976239189a")
+		(property "Reference" "H6"
+			(at 118.11 39.7977 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "E_out"
+			(at 118.11 42.2219 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Surge_Library:I_Hole"
+			(at 119.38 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "05a68892-bd52-456f-9c2c-00972e00314d")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 86.36 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a172183-41ba-4241-9800-cbe038d6c162")
+		(property "Reference" "NE2"
+			(at 88.9 50.038 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NE_L"
+			(at 88.9 52.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Surge_Library:NEmount"
+			(at 91.44 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b369e9b-4924-4afc-b7f6-bcf27de31888")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "NE2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 33.02 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71e7f520-6e1c-42a2-bc73-e8e45c4dfae3")
+		(property "Reference" "H1"
+			(at 31.75 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "N_in"
+			(at 31.75 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Surge_Library:I_Hole"
+			(at 33.02 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d4a43b2-b84a-4994-901d-4349849293e4")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Varistor")
+		(at 100.33 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "807dd9f5-666a-48d4-88e8-e369d06aa1fa")
+		(property "Reference" "RV2"
+			(at 102.87 44.6433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "471K"
+			(at 102.87 47.1832 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Varistor:RV_Disc_D21.5mm_W4.7mm_P10mm"
+			(at 98.552 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_varistor"
+			(at 100.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 100.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A 2=B"
+			(at 100.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "threshold=1k"
+			(at 100.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 100.33 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ba1ec95-1443-485e-aee5-e2b2686a14be")
+		)
+		(pin "2"
+			(uuid "659aff0a-7ed2-40fe-9f0d-93f88671e0b8")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "RV2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Surge:TCB")
+		(at 50.8 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8404b653-bfb4-40d5-b97c-77cece282a12")
+		(property "Reference" "SW1"
+			(at 52.07 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "C1005B 15A TCB"
+			(at 52.07 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Surge_Library:Switch"
+			(at 50.8 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48adf246-dce8-4b02-b131-aac18387cdfe")
+		)
+		(pin "2"
+			(uuid "d0564b1f-7fd8-40f3-ae2d-7f7e4d237d57")
+		)
+		(pin "3"
+			(uuid "81a4a7fb-4b04-467e-aa04-b8382a557e37")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 100.33 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "936581f0-e23f-47bb-a6cd-69b3a6e0bc22")
+		(property "Reference" "#PWR01"
+			(at 100.33 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 100.33 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "85ed377e-e346-4425-8991-0e5fbe749242")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Varistor")
+		(at 100.33 25.4 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "985d3643-e0be-4895-a96f-c0d9d2e84056")
+		(property "Reference" "RV1"
+			(at 104.14 23.9367 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "471K"
+			(at 104.14 26.4766 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Varistor:RV_Disc_D21.5mm_W4.7mm_P10mm"
+			(at 102.108 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_varistor"
+			(at 100.33 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 100.33 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A 2=B"
+			(at 100.33 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "threshold=1k"
+			(at 100.33 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 100.33 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33a53c46-467e-4fb7-ad32-9530feda16fe")
+		)
+		(pin "2"
+			(uuid "211d3543-f713-410b-87d9-fcdc4e46f500")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 33.02 83.82 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c030b0b9-bb33-4aae-b271-1122e0a801dd")
+		(property "Reference" "H3"
+			(at 31.75 77.8977 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "E_in"
+			(at 31.75 80.3219 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Surge_Library:I_Hole"
+			(at 33.02 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 33.02 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e945a44a-66d2-4334-97d9-3bac75dee1d0")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 111.76 30.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1c7ab58-1396-4f69-ae1e-bb825d12505c")
+		(property "Reference" "H4"
+			(at 115.57 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "N_out"
+			(at 115.57 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Surge_Library:L_Hole"
+			(at 111.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b720bd52-1b42-4e3a-9c72-0d4407532628")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 68.58 60.96 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e72043d0-7e07-4be8-8a50-e10334e52141")
+		(property "Reference" "F2"
+			(at 68.58 56.0537 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TCO 115C 20A 250V"
+			(at 68.58 58.4779 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L10.3mm_W5.0mm_P7.50mm_MKS4"
+			(at 68.58 59.182 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 68.58 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d9eaced-3cad-4f4e-ad46-aa268e6fb9fb")
+		)
+		(pin "2"
+			(uuid "839edce0-043b-4365-9407-b7dc8fec86c6")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 86.36 36.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f05afaf4-cf6a-455d-b3b1-1dc0c9e86390")
+		(property "Reference" "NE1"
+			(at 88.9 38.862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "NE_N"
+			(at 88.9 41.402 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Surge_Library:NEmount"
+			(at 81.28 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f59bfcf2-ea8d-448f-94cf-0341eb3ff63e")
+		)
+		(instances
+			(project "Surge"
+				(path "/87282895-5363-4673-9c65-8e036a00088a"
+					(reference "NE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
